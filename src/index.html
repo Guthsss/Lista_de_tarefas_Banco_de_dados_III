@@ -14,10 +14,12 @@
 
     <main>
         <section class="inserir">
+            <!-- Label ligado ao input pelo "for", ajuda na acessibilidade -->
             <h3>
                 <label for="campo-texto">Insira sua tarefa no campo abaixo:</label>
             </h3>
 
+            <!-- Campo onde o usuário digita a tarefa -->
             <input
                 type="text"
                 id="campo-texto"
@@ -25,7 +27,9 @@
                 placeholder="Insira sua tarefa"
                 onkeydown="if (event.key === 'Enter') adicionarTarefa()"
             >
+            <!-- onkeydown permite adicionar a tarefa apertando Enter -->
 
+            <!-- Botão que chama a mesma função adicionarTarefa() do app.js -->
             <button
                 type="button"
                 id="botao-adicionar"
@@ -35,6 +39,7 @@
                 Inserir
             </button>
 
+            <!-- Lista começa vazia, os itens são criados dinamicamente pelo app.js -->
             <ul class="lista-tarefas"></ul>
         </section>
     </main>
