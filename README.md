@@ -6,7 +6,6 @@ Um aplicativo web simples, moderno e elegante para o gerenciamento de tarefas do
 
 - **Adicionar Tarefas:** Insira novas atividades rapidamente pressionando a tecla `Enter` ou clicando no botão de inserção.
 - **Remover Tarefas:** Exclua tarefas concluídas facilmente através do botão de exclusão intuitivo.
-- **Modo Escuro (Dark Mode):** Alternância fluida entre os temas claro e escuro para maior conforto visual.
 - **Design Responsivo:** A interface se adapta perfeitamente a diferentes tamanhos de tela (computadores, tablets e smartphones).
 - **Interface Moderna:** Estilização *clean* utilizando a fonte Poppins, sombras suaves, bordas arredondadas e interações de *hover* nos botões.
 
