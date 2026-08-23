@@ -1,21 +1,119 @@
-:root {
-    --cor-principal-texto: #9BA8AB;
-    --cor-backgroud-header: #06141B;
-}
-body {
-    margin: 0px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: #CCD0CF;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* { /* Reset básico para tirar margens padrão do navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-header {
-    background-color: var(--cor-backgroud-header);
+
+body { /* Fundo da página simples e centralização */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f2f5;
     padding: 20px;
-    text-align: center;
+}
+
+
+header { /* Cabeçalho */
+    margin-bottom: 20px;
 }
 
 .titulo-lista {
-    color: var(--cor-principal-texto);
-
+    color: #2c3e50;
+    font-size: 2.2rem;
+    text-align: center;
 }
 
+main { /* Cartão principal branco com sombra suave */
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 500px;
+}
+
+.inserir h3 { /* Título de instrução */
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+    color: #555;
+    text-align: center;
+    width: 100%;
+}
+
+.inserir { /* Organizando o input e o botão lado a lado */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.campo-texto { /* Campo de digitar a tarefa */
+    flex-grow: 1;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.campo-texto:focus { /* Fica azul ao clicar */
+    border-color: #3498db; 
+}
+
+
+.botao-adicionar { /* Botão de inserir */
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-adicionar:hover { /* Escurece um pouco ao passar o mouse */
+    background-color: #2980b9; 
+}
+
+.lista-tarefas { /* Lista de tarefas */
+    list-style: none;
+    margin-top: 25px;
+    width: 100%;
+}
+
+.lista-tarefas li { /* Estilo de cada item da lista (<li>) que o JS vai criar */
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 5px solid #3498db; /* Detalhe azul na lateral */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+
+footer { /* Rodapé */
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Responsividade (Para ficar bom no celular) */
+@media (max-width: 480px) {
+    .campo-texto, .botao-adicionar {
+        width: 100%; /* No celular, o botão cai para a linha de baixo e ocupa a tela toda */
+    }
+}
