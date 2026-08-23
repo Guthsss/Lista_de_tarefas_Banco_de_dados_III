@@ -1,0 +1,25 @@
+# Pastas de Editores de Código (VS Code, WebStorm, etc)
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Arquivos do Sistema Operacional (Mac e Windows)
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs (caso algum erro gere um arquivo de log)
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# (Opcional) Caso no futuro você use npm/Node.js no projeto
+node_modules/
