@@ -24,4 +24,3 @@ Como é um projeto estático, não é necessária nenhuma instalação complexa.
 1. Clone este repositório em sua máquina local:
    ```bash
    git clone [https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git](https://github.com/SEU_USUARIO/NOME_DO_REPOSITORIO.git)
- teste 1 conflito de merge desafio
