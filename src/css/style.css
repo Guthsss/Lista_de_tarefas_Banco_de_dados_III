@@ -1,0 +1,21 @@
+:root {
+    --cor-principal-texto: #9BA8AB;
+    --cor-backgroud-header: #06141B;
+}
+body {
+    margin: 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: #CCD0CF;
+}
+
+header {
+    background-color: var(--cor-backgroud-header);
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-lista {
+    color: var(--cor-principal-texto);
+
+}
+
